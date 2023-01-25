@@ -1,6 +1,3 @@
-### Scripts to run hyper-parameter search for drl mask training
-
-## Expt 1: Investigate random search for: num-frames stacking and ski-frames
 
 import numpy as np
 import sys,os
@@ -20,9 +17,6 @@ def gpu_under_use(index):
 		bul=False
 	return bul
 
-img_size_x=[32,64,128,256]
-img_size_y=[40,80,160,320]
-#skip_frames=[np.random.randint(1,num_frames[i]+1) for i in range(len(num_frames))]
 
 count=0
 while count<10:
